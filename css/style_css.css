@@ -1,0 +1,81 @@
+.b-page_body{
+  font-size: medium;
+  line-height: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  width:100%;
+  margin:0;
+  min-width: 778px;
+  background: #55697A;
+  color: #77D4D3;
+}
+.b-page_header{
+  padding-top: 5%;
+  font-size: xx-large;
+}
+
+.b-page_menu{
+  display:table;
+  table-layout: auto;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+  margin:0;
+  background: url(../images/background_footer.png) no-repeat 100% 15%;
+  background-size: 100%;
+}
+.b-page_menu_link{
+  color: #b3d7f0;
+  text-decoration:none;
+}
+.b-page_menu_button{
+  display: table-cell;
+  text-align: center;
+}
+.b-page_main{
+  margin: 100px 30px 125px;
+  background: #55697A;
+  color: #77D4D3;
+}
+
+.b-page_article{
+  padding: 1%;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: small;
+  text-align: left;
+  background: #3C60A2;
+  color: #f17f8a;
+  box-shadow: 15px 15px #3C50A2, 15px 15px #3C60A2;
+}
+.b-page_section{
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  gap: 8.5%;
+  margin: 7% auto 10%;
+}
+.b-page_section_header{
+  text-align: center;
+  font-weight: 900;
+  padding-top: 3%;
+}
+
+.b-page_footer{
+  text-align: center;
+  padding: 2%;
+  background: url(../images/background_footer.png) no-repeat 100% 15%;
+  background-size: 100%;
+  color: #b3d7f0;
+  border: 1px solid #19080F;
+}
+.b-page_footer_logo{
+  text-align: center;
+  padding: 1%;
+  background: #19080F;
+}
