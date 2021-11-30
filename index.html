@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Карты таро</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style_css.css" rel="stylesheet">
   <meta name="keywords" content="Карты таро, Гадание, Предскажи со=вою судьбу">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
-<body>
-
-<header>
-<h1>Карты Таро</h1>
+<body class = "b-page_body">
+<nav>
+  <ul class="b-page_menu">
+    <li class="b-page_menu_button"><a href="#article" class="b-page_menu_link">Что такое карты Таро?</a></li>
+    <li class="b-page_menu_button"><a href="#section" class="b-page_menu_link">Старшие арканы</a></li>
+    <li class="b-page_menu_button"><a href="#second_section" class="b-page_menu_link">Жезлы</a></li>
+    <li class="b-page_menu_button"><a href="#div" class="b-page_menu_link">Для чего нужны карты Таро?</a></li>
+  </ul>
+</nav>
+<header class = "b-page_header">
+<h1 class = "b-page_section_header">Карты Таро</h1>
 </header>
- <nav>
-   <ul class="menu">
-     <li><a href="#article">Что такое карты Таро?</a></li>
-     <li><a href="#section">Старшие арканы</a></li>
-     <li><a href="#aside">Жезлы</a></li>
-     <li><a href="#footer">Для чего нужны карты Таро?</a></li>
-   </ul>
- </nav>
-<main>
-  <article id="article">
+<main class = "b-page_main">
+  <article id="article" class = "b-page_article">
     <h1>Что такое карты Таро?</h1>
     <blockquote>
       <p>Таро - это зеркало, в котором можно увидеть себя теми, кто мы есть: магическими существами.</p>
@@ -34,9 +36,9 @@
     ближайшее будущее, ситуация или вопрос, гадание на любовь и отношения,
     гадание на мысли, ситуацию в работе и многое другое.</p>
   </article>
-  <h1>Какие карты Таро бывают?</h1>
-  <section id="section">
-    <h1>Старшие арканы</h1>
+  <h1 class = "b-page_section_header">Какие карты Таро бывают?</h1>
+  <h2 class = "b-page_section_header">Старшие арканы</h2>
+  <section id="section" class = "b-page_section">
     <figure>
       <img src="images/fool.jpg" width="170" height="300" alt="">
       <figcaption>Шут</figcaption>
@@ -54,8 +56,8 @@
       <figcaption>Императрица</figcaption>
     </figure>
   </section>
-  <aside id="aside">
-    <h1>Жезлы</h1>
+  <h2 class = "b-page_section_header">Жезлы</h2>
+  <section id="second_section" class = "b-page_section">
     <figure>
       <img src="images/tuz-zhezlov.jpg" width="170" height="300" alt="">
       <figcaption>Туз жезлов</figcaption>
@@ -72,23 +74,36 @@
       <img src="images/rycar-zhezlov.jpg" width="170" height="300" alt="">
       <figcaption>Рыцарь жезлов</figcaption>
     </figure>
-  </aside>
+  </section>
+  <div id="div" class = "b-page_article">
+    <h1>Для чего нужны карты Таро?</h1>
+    <dl>
+      <dt><strong>Гадание</strong></dt>
+      <dd>Лучше познаёшь себя</dd>
+      <dd>Выработка тактики и стратегии своего собственного будущего</dd>
+      <dt><strong>Игра</strong></dt>
+      <dd>Французское таро</dd>
+      <dd>Криббедж</dd>
+      <dt><strong>Коллекционирование</strong></dt>
+      <dd>Колода таро состоит из 78(79) арканов</dd>
+
+    </dl>
+  </div>
 </main>
 
-<footer id="footer">
-  <h1>Для чего нужны карты Таро?</h1>
-  <dl>
-    <dt><strong>Гадание</strong></dt>
-    <dd>Лучше познаёшь себя</dd>
-    <dd>Выработка тактики и стратегии своего собственного будущего</dd>
-    <dt><strong>Игра</strong></dt>
-    <dd>Французское таро</dd>
-    <dd>Криббедж</dd>
-    <dt><strong>Коллекционирование</strong></dt>
-    <dd>Колода таро состоит из 78(79) арканов</dd>
 
-  </dl>
+<footer class = "b-page_footer">
+  <h1 class = "b-page_section_header">Контакты</h1>
+  <dt><strong class = "b-page_section_header">Верховный Маг Богдан</strong></dt>
+  <dd>TheBiggestWandInHogwarts@magic.poof</dd>
+  <dt><strong class = "b-page_section_header">Мама Мага</strong></dt>
+  <dd>MomOfTheBiggestWandInHogwarts@magic.poof</dd>
+  <figure>
+    <img src="images/footer_logo.jpg" width="192" height="108">
+    <figcaption>© 2021 Карты Таро</figcaption>
+  </figure>
 </footer>
+
 
 </body>
 </html>
