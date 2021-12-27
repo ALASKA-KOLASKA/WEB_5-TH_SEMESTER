@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Расписание гаданий</title>
+  <link href="css/style_css.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/cards.css" rel="stylesheet">
+  <link href="css/swiper.css" rel="stylesheet">
+
+  <script src="js/form.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <script src="js/swiper.js"></script>
+  <meta name="keywords" content="Карты таро, Гадание, Предскажи со=вою судьбу">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body class = "b-page_body">
+<nav>
+  <ul class="b-page_menu">
+    <li class="b-page_menu_button"><a href="#record" class="b-page_menu_link">Запись на гадания</a></li>
+    <li class="b-page_menu_button"><a href="#every" class="b-page_menu_link">Ежедневные предсказания</a></li>
+    <li class="b-page_menu_button"><a href="#gallery" class="b-page_menu_link">Атмосфера гадания</a></li>
+    <li class="b-page_menu_button"><a href="lab_1.html" class="b-page_menu_link">Вернуться на главную</a></li>
+  </ul>
+</nav>
+<header class = "b-page_header">
+  <h1 class = "b-page_section_header">Запись, предсказания и галерея</h1>
+</header>
+<main class = "b-page_main">
+  <div class = 'form_event'>
+    <h2 id="record" class = "b-page_section_header">Запись на гадания</h2>
+    <div class = "left_column">
+      <form class="line-web" id="line-web">
+
+        <div class="line-flex">
+          <div class="web-row">
+            <input required type="text" class = "input_form_p" id="name" name="Имя" placeholder="Введите имя..."/>
+          </div>
+
+          <div class="web-row">
+            <input required type="text" id="task" class = "input_form_p" name="Задача"  placeholder="Введите задачу..."/>
+          </div>
+          <div class="web-row">
+            <input required type="date" class = "input_form_p" name="Дедлайн" placeholder="Введите дату дедлайна..." />
+          </div>
+        </div>
+        <div class="web-row">
+          <button type="submit" class="-button shine-button" id="add-btn">Добавить</button>
+          <button type="button" class="-button shine-button" id="clear-btn">Очистить</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="table-responsive">
+      <table id="-table">
+
+        <thead>
+        <tr>
+          <th>Имя</th>
+          <th>Задача</th>
+          <th>Дедлайн</th>
+          <th></th>
+        </tr>
+        </thead>
+
+        <tbody id = "paragraph_table">
+
+        <template id="main-todo-table">
+          <tr class = "todo_list">
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td class="disabled"></td>
+            <td><button type="button" class="-button delete_button shine-button">Закрыть</button> </td></td>
+          </tr>
+        </template>
+
+        </tbody>
+
+
+      </table>
+    </div>
+  </div>
+
+  <div class="card_line">
+    <h2 id="every" class = "b-page_section_header">Ежедневные предсказания</h2>
+
+    <button id="add_button">Мне не повезёт</button>
+
+    <div id="cards" class="container_card">
+
+      <div id="load_" class="card disabled"></div>
+
+    </div>
+
+    <template id="template_card">
+      <div class="card">
+        <h3>Ваше предсказание на сегодня:</h3>
+        <h2 class="title_card" id="title_card"></h2>
+        <div class="card_body" id="card_body"></div>
+      </div>
+    </template>
+
+
+  </div>
+
+  <div class="swiper mySwiper b-page__line-header_d_swiper">
+    <h2 id="gallery" class = "b-page_section_header">Атмосфера гадания</h2>
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="images/timeless/first_photo.jpg" class="img__team_itemm">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/timeless/second_photo.jpg" class="img__team_itemm">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/timeless/third_photo.jpg" class="img__team_item">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/timeless/fourth_photo.jpg" class="img__team_item">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/timeless/fifth_photo.jpg" class="img__team_item">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/timeless/sixth_photo.jpg" class="img__team_itemm">
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination" id = "swiper-pagination_g"></div>
+
+    <div class="swiper-button-prev " id = "button_color_g_prev"></div>
+    <div class="swiper-button-next " id = "button_color_g_next"></div>
+  </div>
+</main>
+
+
+<footer class = "b-page_footer">
+  <h1 class = "b-page_section_header">Контакты</h1>
+  <dt><strong class = "b-page_section_header">Верховный Маг Богдан</strong></dt>
+  <dd>TheBiggestWandInHogwarts@magic.poof</dd>
+  <dt><strong class = "b-page_section_header">Мама Мага</strong></dt>
+  <dd>MomOfTheBiggestWandInHogwarts@magic.poof</dd>
+  <figure>
+    <img src="images/footer_logo.jpg" width="192" height="108">
+    <figcaption>© 2021 Карты Таро</figcaption>
+  </figure>
+</footer>
+
+
+</body>
+</html>
+
